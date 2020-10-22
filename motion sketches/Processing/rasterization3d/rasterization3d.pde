@@ -7,12 +7,12 @@ void setup() {
 }
 
 void draw() {
-  background(#f1f1f1);
-  fill(0);
+  background(0);
+  fill(#f1f1f1);
   noStroke();
   sphereDetail(3);
   float tiles = 100;
-  float tileSize = width/tiles;
+  float tileSize = width/(1.35*tiles);
   push();
   translate(width/2,height/2);
   rotateY(radians(frameCount));
